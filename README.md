@@ -240,14 +240,6 @@ In the `Activity`, the `repeadOnLifecycle` suspend function is used to collect e
 [[code viewmodel](app/src/main/java/com/lukaslechner/coroutineusecasesonandroid/usecases/flow/usecase4/FlowUseCase4ViewModel.kt)]
 [[code datasource](app/src/main/java/com/lukaslechner/coroutineusecasesonandroid/usecases/flow/usecase4/StockPriceDataSource.kt)]
 
-## Author
-
-![LukasLechner](documentation/images/lukle.png)
-
-[Lukas Lechner](https://www.lukaslechner.com)
-
-[Twitter](https://twitter.com/LukasLechnerDev) 
-
 ## License
 
 Licensed under the Apache License, Version 2.0 (the "License").
