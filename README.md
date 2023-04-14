@@ -21,41 +21,6 @@ Everything can be configured: http status codes, response data and delays. Every
 The API has 2 endpoints. One returns the names of the most recent Android versions and the other one returns the features of a certain
 Android version.
 
-Unit Tests exist for most use cases.
-
-## 🍿️ Related Videos
-* Kotlin Flow on Android Basics Playlist [[link](https://youtube.com/playlist?list=PL-1MzrWZIYU3McdBOEic_1nsy8Rw48xIO)]
-* Kotlin Coroutines Fundamentals Playlist [[link](https://www.youtube.com/playlist?list=PL-1MzrWZIYU2a4TGbSXeXzfet8Br3cya1)]
-* Kotlin Coroutines Exception Handling explained [[link](https://youtu.be/Pgek3_3vPU8)]
-* How to avoid 5 common mistakes when using Kotlin Coroutines [[link](https://youtu.be/coq9XDMB-yU)]
-* Best Practices for using Kotlin Coroutines in Android Development [[link](https://youtu.be/tVDCpjqQ1Ro)]
-
-## ✍️ Related blog posts
-* 7 Common Mistakes you might be making when using Kotlin Coroutines [[link](https://www.lukaslechner.com/7-common-mistakes-you-might-be-making-when-using-kotlin-coroutines/)]
-* Why exception handling with Kotlin Coroutines is so hard and how to successfully master it! [[link](https://www.lukaslechner.com/why-exception-handling-with-kotlin-coroutines-is-so-hard-and-how-to-successfully-master-it/)]
-* Kotlin Coroutines exception handling cheat sheet [[link](https://www.lukaslechner.com/coroutines-exception-handling-cheat-sheet/)]
-* Understanding Kotlin Coroutines with this mental model [[link](https://www.lukaslechner.com/understanding-kotlin-coroutines-with-this-mental-model/)]
-* Do I need to call suspend functions of Retrofit and Room on a background thread? [[link](https://www.lukaslechner.com/do-i-need-to-call-suspend-functions-of-retrofit-and-room-on-a-background-thread/)]
-* Comparing Kotlin Coroutines with Callbacks and RxJava [[link](https://www.lukaslechner.com/comparing-kotlin-coroutines-with-callbacks-and-rxjava/)]
-* How to run an expensive calculation with Kotlin Coroutines on the Android Main Thread without freezing the UI [[link](https://www.lukaslechner.com/how-to-run-an-expensive-calculation-with-kotlin-coroutines-on-the-android-main-thread-without-freezing-the-ui/)]
-
-Sign up to my [newsletter](https://www.lukaslechner.com/newsletter/) to never miss new content. I will publish new blog posts and videos about Coroutines and Flow on a regular basis.
-
-## 🎓 Online Course
-
-This project is the foundation of a comprehensive Online Course about [Kotlin Coroutines and Flow for Android Development](https://lukaslechner.com/coroutines-flow-android?source=github)
-In the course, we are going to implement the use cases of this repository together, as well as talk about all the necessary concepts that you need to know. 
-
-[![CourseCoroutinesOnAndroid](documentation/images/course.png)](https://lukaslechner.com/coroutines-flow-android?source=github)
-
-## 📢 Sharing is Caring 
-
-If you like this project, please tell other developers about it! ❤️
-
-[![Share on Twitter](documentation/images/Twitter_bird_logo.png)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FLukasLechnerDev%2FKotlin-Coroutine-Use-Cases-on-Android&text=This%20awesome%20example%20project%20shows%20how%20to%20implement%20the%20most%20common%20use%20cases%20for%20using%20Kotlin%20Coroutines%20for%20Android%20Development%21%20By%20@LukasLechnerDev&hashtags=%23AndroidDev%20%23Kotlin%20%23Coroutines)
-
-If you like, you can follow me on Twitter [**@LukasLechnerDev**](https://twitter.com/LukasLechnerDev).
-
 ## ⭐️ Coroutine Use Cases
 1. [Perform single network request](#1-perform-single-network-request)
 2. [Perform two sequential network requests](#2-perform-two-sequential-network-requests)
