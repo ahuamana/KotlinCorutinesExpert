@@ -38,6 +38,8 @@ interface CallbackMockApi {
     fun getAndroidVersionFeatures(@Path("apiLevel") apiLevel: Int): Call<VersionFeatures>
 }
 
+
+
 fun createMockApi(interceptor: MockNetworkInterceptor): CallbackMockApi {
     val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(interceptor)
