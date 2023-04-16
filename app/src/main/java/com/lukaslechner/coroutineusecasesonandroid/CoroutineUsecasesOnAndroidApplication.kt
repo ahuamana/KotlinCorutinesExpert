@@ -1,7 +1,7 @@
 package com.lukaslechner.coroutineusecasesonandroid
 
 import android.app.Application
-import androidx.viewbinding.BuildConfig
+import android.content.pm.ApplicationInfo
 import com.lukaslechner.coroutineusecasesonandroid.usecases.coroutines.usecase14.AndroidVersionDatabase
 import com.lukaslechner.coroutineusecasesonandroid.usecases.coroutines.usecase14.AndroidVersionRepository
 import kotlinx.coroutines.CoroutineScope
@@ -25,8 +25,10 @@ class CoroutineUsecasesOnAndroidApplication : Application() {
 
         Timber.plant(Timber.DebugTree())
 
+        val isDebuggable: Boolean = 0 != applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE
+
         // Enable Debugging for Kotlin Coroutines in debug builds
         // Prints Coroutine name when logging Thread.currentThread().name
-        System.setProperty("kotlinx.coroutines.debug", if (BuildConfig.DEBUG) "on" else "off")
+        System.setProperty("kotlinx.coroutines.debug", if (isDebuggable) "on" else "off")
     }
 }
