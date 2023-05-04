@@ -6,6 +6,8 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.toCollection
+import kotlinx.coroutines.flow.transform
 
 suspend fun main () {
     val firstFlow = flowOf<Int>(1).collect{ emmittedValue ->
@@ -26,6 +28,10 @@ suspend fun main () {
         emitAll(secondFlow)
     }.collect(){ emmittedValue ->
         println("flow{} $emmittedValue")
+    }
+    //Return list of flow completely
+    listOf("a","b","c").asFlow().toCollection(mutableListOf()).apply {
+        println("toCollection $this")
     }
 
 }
