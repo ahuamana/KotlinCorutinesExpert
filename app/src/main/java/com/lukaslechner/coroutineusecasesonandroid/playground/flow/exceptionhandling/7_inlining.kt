@@ -16,12 +16,17 @@ import java.lang.Exception
 suspend fun main():Unit = coroutineScope {
     flow{
         emit(1)
-    }.onEach {
-        throw Exception("Something went wrong")
+        emit(2)
+        emit(3)
+    }.collect{
         println("Collected $it")
-    }.catch {
-        println("Caught $it")
-    }.launchIn(this)
+    }
 }
 
+
+val inlinedFlow = flow<Int>{
+    println("Collented 1")
+    println("Collented 2")
+    println("Collented 3")
+}
 
