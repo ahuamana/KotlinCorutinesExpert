@@ -5,6 +5,7 @@ import androidx.lifecycle.asLiveData
 import com.lukaslechner.coroutineusecasesonandroid.base.BaseViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.cancellable
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
@@ -48,7 +49,8 @@ class FlowUseCase2ViewModel(
             it.filter {
                 it.country == "United States"
             }
-        }.map {stockList->
+        }.cancellable()
+        .map {stockList->
            stockList.mapIndexed { index, it ->
                it.copy(rank = index + 1)
            }

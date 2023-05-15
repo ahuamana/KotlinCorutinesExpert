@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.lukaslechner.coroutineusecasesonandroid.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.cancellable
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
@@ -31,6 +32,7 @@ class FlowUseCase1ViewModel(
         .onCompletion {
             Timber.d("Flow completed")
         }
+        .cancellable()
         .asLiveData()
 
 
